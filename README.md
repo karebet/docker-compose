@@ -12,13 +12,17 @@ php7.2, nginx, mysql
 
 ##### menyetop dan menghapus container
 `docker kill container NAMACONTAINER`
+
 `docker rm container NAMACONTAINER`
 
 
 ##### mysql
+
 masuk ke docker container yg sedang berjalan
 `docker exec -it DOCKER_CONTAINER_ID bin/bash`
+
 import ke database
 `mysql -u root -p NAMADATABASE < /etc/mysql/NAMADATABASE.sql`
+
 export database
 `mysqldump -u root -p NAMADATABASE > /etc/mysql/NAMADATABASE.sql`
