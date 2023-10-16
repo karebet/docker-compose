@@ -15,6 +15,8 @@ php7.2, nginx, mysql
 
 `docker rm container NAMACONTAINER`
 
+#### membuat netword di internal docker
+`docker network create --driver bridge --subnet 172.26.0.0/24 internal`
 
 ##### mysql
 
